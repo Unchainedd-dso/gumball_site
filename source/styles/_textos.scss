@@ -1,0 +1,67 @@
+@use 'variaveis' as  v;
+
+@mixin text($tamanhoFonte:16px){
+    font-size: $tamanhoFonte;
+    line-height: $tamanhoFonte + 10px;
+    color: v.$corTexto;
+}
+
+@mixin title($tamanhoFonte:40px){
+    font-size: $tamanhoFonte;
+    line-height: $tamanhoFonte + 10px;
+    color: v.$corTitulos;
+}
+
+.texto--grande{
+    @include text(18px);
+
+    @media screen and (max-width:768px){
+        @include text(15px);
+    }
+}
+
+.texto{
+    @include text();
+
+    @media screen and (max-width:768px){
+        @include text(14px);
+    }
+}
+
+.texto--pequeno{
+    @include text(12px);
+
+    @media screen and (max-width:768px){
+        @include text(11px);
+    }
+}
+
+.titulo--grande{
+    @include title(44px);
+
+    @media screen and (max-width:768px){
+        @include title(28px);
+    }
+}
+
+.titulo{
+    @include title();
+
+    @media screen and (max-width:768px){
+        @include title(24px);
+    }
+}
+
+.titulo--pequeno{
+    @include title(28px);
+
+    @media screen and (max-width:768px){
+        @include title(22px);
+    }
+}
+
+.link-texto{
+    @include text(18px);
+    color: v.$corTitulos;
+    text-decoration: underline;
+}

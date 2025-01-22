@@ -1,0 +1,89 @@
+@use 'variaveis' as v;
+
+.footer{
+    padding: 16px 8px;
+    background-image: url(../../Imagens_projeto_4/galaxy_c.jpg);
+
+    &__container{
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    &__logo{
+        width: 80px;
+        margin: 0 auto 10px;
+    }
+
+    &__links{
+        list-style: none;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        // faz com que os elementos troque de linha
+        flex-wrap: wrap;
+        // centraliza os dois itens de baixo
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+
+    &__link-item{
+        display: inline-block;
+        margin: auto 0;
+        
+        a{
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            // Por padrão o display do 'a' é inline, fazendo com que o padding não funcione direito
+            display: block;
+
+            &:hover{
+                color: #43c4da;
+            }
+        }
+    }
+
+    &__text{
+        color: white;
+    }
+
+}
+
+.language-selector{
+    display: flex;
+    align-items: center;
+    height: 38px;
+
+    &__image{
+        height: 18px;
+        width: 18px;
+    }
+
+    &__options{
+        background-color: transparent;
+        border: none;
+        color: white;
+
+        option{
+            background-color: black;
+            border: none;
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .footer{
+        &__link-item{
+            font-size: 12px;
+        }
+
+        &__text{
+            font-size: 12px;
+        }
+    }
+
+
+}

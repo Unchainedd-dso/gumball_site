@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo">
+                <img src="./Imagens_projeto_4/gumball_logo.png" alt="disney plus logo">
+            </h1>
+            <ul class="header__links">
+                <li class="header__item">
+                    <a class="botao botao--first" href="#">Absolutamente</a>
+                </li>
+                <li class="header__item">
+                    <a class="botao botao--second" href="#">Nada</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__logo">
+                    <img src="./Imagens_projeto_4/gumball_logo.png" alt="disney plus logo">
+                </h1>
+                <h3 class="titulo--pequeno">
+                    As melhores histórias em um só lugar.
+                </h3>
+                <ul class="hero__streamings">
+                    <li class="hero__streaming">
+                        <img class="hero__streaming__logo" src="./Imagens_projeto_4/netflix_logo.png" alt="Netflix">
+                        <a href="https://www.netflix.com/br/title/70243420" class="botao botao--red" role="button">Veja Agora</a>
+                    </li>
+                    <li class="hero__streaming">
+                        <img class="hero__streaming__logo" src="./Imagens_projeto_4/Max_logo_2.png" alt="Max">
+                        <a href="https://www.max.com/br/pt/shows/o-incrivel-mundo-de-gumball/18ad0649-f2dd-410d-8842-2ba2aa486fdb" class="botao botao--dark" role="button">Veja Agora</a>
+                    </li>
+                </ul>
+            </div>
+            <img class="hero__image" src="./Imagens_projeto_4/watterson_family.png" alt="Família Watterson">
+        </section>
+        <section class="synopsis">
+            <div class="synopsis__content">
+                <h2 class="synopsis__about-text">
+                    <img src="./Imagens_projeto_4/Sobre_a_historia.png" alt="Sobre a História">
+                </h2>
+                <img class="synopsis__penny" src="./Imagens_projeto_4/penny.png" alt="penny">
+                <div class="synopsis__text">
+                    <p>
+                        A série gira em torno de Gumball Watterson, um gato azul de 12 anos de idade,[2] que frequenta a escola secundária na cidade fictícia de Elmore. Acompanhado por seu irmão peixinho, Darwin Watterson, os dois frequentemente se veem envolvidos em várias confusões em diversos locais da cidade, durante o qual eles interagem com os outros membros da família - a irmã, Anais Watterson e os pais Nicole Watterson e Richard Watterson acompanhados de outros personagens secundários.
+                    </p>
+                </div>
+                <img class="synopsis__gumball" src="./Imagens_projeto_4/gumball.png" alt="gumball">
+            </div>
+            </ul>
+        </section>
+        <section class="characters">
+            <nav class="characters__tabs ">
+                <!-- atributos data sao para usar no Js para dar o alvo do botao a tab necessaria -->
+                <button data-tab-button="family" class="characters__tabs__button characters__tabs__button--is-active">
+                    Familia Watterson
+                </button>
+                <button data-tab-button="friends" class="characters__tabs__button">
+                    Colegas de classe
+                </button>
+                <button data-tab-button="Robinsons" class="characters__tabs__button">
+                    Robinsons
+                </button>
+            </nav>
+            <ul data-tab-id="family" class="characters__display characters__display--is-active">
+                <li class="characters__item">
+                    <img src="./Imagens_projeto_4/gumball_c.png" alt="Gumball">
+                    <p class="characters__name">Gumball</p>
+                </li>
+                <li class="characters__item">
+                    <img src="./Imagens_projeto_4/darwin_c.png" alt="Darwin">
+                    <p class="characters__name">Darwin</p>
+                </li>
+                <li class="characters__item">
+                    <img src="./Imagens_projeto_4/anais_c.png" alt="Anais">
+                    <p class="characters__name">Anais</p>
+                </li>
+                <li class="characters__item">
+                    <img src="./Imagens_projeto_4/nicole_c.png" alt="Nicole">
+                    <p class="characters__name">Nicole</p>
+                </li>
+                <li class="characters__item">
+                    <img src="./Imagens_projeto_4/richard_c.png" alt="Richard">
+                    <p class="characters__name">Richard</p>
+                </li>
+            </ul>
+            <ul class="characters__display" data-tab-id="friends">
+                <li class="characters__item">
+                    <img src="./Imagens_projeto_4/penny_c.png" alt="Penny">
+                    <p class="characters__name">Penny</p>
+                </li>
+                <li class="characters__item characters__item--alan">
+                    <img src="./Imagens_projeto_4/keane_c.png" alt="Alan">
+                    <p class="characters__name">Alan</p>
+                </li>
+                <li class="characters__item ">
+                    <img src="./Imagens_projeto_4/carrie_c.png" alt="Carrie">
+                    <p class="characters__name">Carrie</p>
+                </li>
+                <li class="characters__item">
+                    <img src="./Imagens_projeto_4/leslie_c.png" alt="Leslie'">
+                    <p class="characters__name">Leslie</p>
+                </li>
+                <li class="characters__item characters__item--masami">
+                    <img src="./Imagens_projeto_4/masami_c_2.png" alt="Masami">
+                    <p class="characters__name">Masami</p>
+                </li>
+                <li class="characters__item">
+                    <img src="./Imagens_projeto_4/tobias_c.png" alt="Tobias">
+                    <p class="characters__name">Tobias</p>
+                </li>
+                <li class="characters__item">
+                    <img src="./Imagens_projeto_4/tina_c.png" alt="Tina">
+                    <p class="characters__name">Tina</p>
+                </li>
+                <li class="characters__item">
+                    <img src="./Imagens_projeto_4/molly_c.png" alt="Molly">
+                    <p class="characters__name">Molly</p>
+                </li>
+                <li class="characters__item">
+                    <img src="./Imagens_projeto_4/sarah_c.png" alt="Sarah">
+                    <p class="characters__name">Sarah</p>
+                </li>
+                <li class="characters__item">
+                    <img src="./Imagens_projeto_4/Sussie_c.png" alt="Sussie">
+                    <p class="characters__name">Sussie</p>
+                </li>
+                <li class="characters__item">
+                    <img src="./Imagens_projeto_4/idaho_c.png" alt="Idaho">
+                    <p class="characters__name">Idaho</p>
+                </li>
+                <li class="characters__item">
+                    <img src="./Imagens_projeto_4/teri_c.png" alt="Teri">
+                    <p class="characters__name">Teri</p>
+                </li>
+                <li class="characters__item">
+                    <img src="./Imagens_projeto_4/juke_c.jpg" alt="Juke">
+                    <p class="characters__name">Juke</p>
+                </li>
+                <li class="characters__item">
+                    <img src="./Imagens_projeto_4/william_c.png" alt="William">
+                    <p class="characters__name">William</p>
+                </li>
+                <li class="characters__item">
+                    <img src="./Imagens_projeto_4/carmen_c.png" alt="Carmen">
+                    <p class="characters__name">Carmen</p>
+                </li>
+            </ul>
+            <ul class="characters__display" data-tab-id="Robinsons">
+                <li class="characters__item characters__item--gay">
+                    <img src="./Imagens_projeto_4/Mr_Robinson_c.png" alt="">
+                    <p class="characters__name">Gaylord</p>
+                </li>
+                <li class="characters__item characters__item--devilish-woman">
+                    <img src="./Imagens_projeto_4/Margaret_Robinson_c.png" alt="Os Simpsons">
+                    <p class="characters__name">Margaret</p>
+                </li>
+                <li class="characters__item">
+                    <img src="./Imagens_projeto_4/rocky_c.png" alt="Premier League">
+                    <p class="characters__name">Rocky</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <div class="watch-the-series">
+                <img class="watch-the-series__image" src="./Imagens_projeto_4/Elmore_peolple.png" alt="TV, computador, celular e tablet">
+                <div class="watch-the-series__text-container">
+                    <h2 class="watch-the-series__title">Conheça Elmore</h2>
+                    <p class="watch-the-series__text">
+                        Texto motivando a ver a série e a conhecer o Incrível Mundo de Gumball
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptate repudiandae ullam illo accusantium maxime nesciunt incidunt hic accusamus. Quidem eum, eos necessitatibus eveniet ratione omnis fuga odio optio. Blanditiis?
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./Imagens_projeto_4/gumball_logo.png" alt="Disney+">
+            <ul class="footer__links">
+                <li class="footer__link-item">
+                    <div class="language-selector">
+                        <img class="language-selector__image" src="./dist/images/icones/globe.svg" alt="globo">
+                        <select class="language-selector__options">
+                            <option selected>Português</option>
+                            <option>English</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__link-item">
+                    <a href="#">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__link-item">
+                    <a href="#">Anúncios Personalizados</a>
+                </li>
+                <li class="footer__link-item">
+                    <a href="#">Dispositivos Compatívies</a>
+                </li>
+                <li class="footer__link-item">
+                    <a href="#">Ajuda</a>
+                </li>
+            </ul>
+            <p class="footer__text">
+                © 2025 Cartoon Network. Todos os direitos reservados. Conteúdo sujeito a copyright.
+            </p>
+        </div>
+    </footer>
+    <script src="./source/scripts/main.js"></script>
+</body>
+</html>
